@@ -8,6 +8,23 @@ document.addEventListener("DOMContentLoaded", function () {
       navLinks.classList.toggle("active");
       hamburger.classList.toggle("active");
     });
+    
+    // Close menu when clicking on a nav link
+    const navLinkItems = document.querySelectorAll(".nav-links a");
+    navLinkItems.forEach(link => {
+      link.addEventListener("click", function () {
+        navLinks.classList.remove("active");
+        hamburger.classList.remove("active");
+      });
+    });
+    
+    // Close menu when clicking outside
+    document.addEventListener("click", function (event) {
+      if (!hamburger.contains(event.target) && !navLinks.contains(event.target)) {
+        navLinks.classList.remove("active");
+        hamburger.classList.remove("active");
+      }
+    });
   }
 
   // Load blog posts on homepage
