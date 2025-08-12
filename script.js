@@ -97,7 +97,8 @@ function loadFallbackBlogPosts(container) {
     {
       id: 2,
       title: "Choppin it Up with Shellie",
-      description: "",
+      description:
+        "Ju Dizel Music Artist talks about his move to Denver collaborations and New music",
       youtube_link: "https://www.youtube.com/watch?v=W2PBZRoqjPQ",
       image: "./2.png",
     },
