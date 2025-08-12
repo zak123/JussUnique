@@ -2,31 +2,17 @@
   "posts": [
     {
       "id": 1,
-      "title": "New Track 'Denver Dreams' Coming Soon",
-      "description": "Been working on something special since moving to Denver. This track captures the energy and vibe of my new journey in the mile-high city. Can't wait for y'all to hear what I've been cooking up in the studio.",
-      "youtube_embed": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-      "image": "https://via.placeholder.com/600x400/1a1a1a/ffffff?text=Denver+Dreams"
+      "title": "JussUnique Freestyle",
+      "description": "",
+      "youtube_link": "https://www.youtube.com/watch?v=dJT69oK8vnQ",
+      "image": "./1.png"
     },
     {
       "id": 2,
-      "title": "Ode to Richmond Album Anniversary",
-      "description": "Celebrating the one-year anniversary of my album 'Ode to Richmond' - a 17-track tribute to my roots. This project means everything to me and represents where I came from before making the move to Denver.",
-      "youtube_embed": "https://www.youtube.com/embed/3JZ_D3ELwOQ",
-      "image": "https://via.placeholder.com/600x400/2d1b69/ffffff?text=Ode+to+Richmond"
-    },
-    {
-      "id": 3,
-      "title": "Live at Beats Bodega - Recap",
-      "description": "What a night at Beats Bodega! The energy was unmatched and connecting with fellow artists in Denver's hip-hop scene was incredible. Shoutout to everyone who came through and showed love.",
-      "youtube_embed": "https://www.youtube.com/embed/kJQP7kiw5Fk",
-      "image": "https://via.placeholder.com/600x400/8b0000/ffffff?text=Beats+Bodega+Live"
-    },
-    {
-      "id": 4,
-      "title": "Studio Sessions in Denver",
-      "description": "Been grinding in the studio, working on new material that showcases my evolution as an artist. Denver's creative energy has been inspiring and I'm excited to share what's coming next with my fans.",
-      "youtube_embed": "https://www.youtube.com/embed/L_jWHffIx5E",
-      "image": "https://via.placeholder.com/600x400/4a4a4a/ffffff?text=Studio+Sessions"
+      "title": "Choppin it Up with Shellie",
+      "description": "",
+      "youtube_link": "https://www.youtube.com/watch?v=W2PBZRoqjPQ",
+      "image": "./2.png"
     }
   ]
 }

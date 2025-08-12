@@ -428,6 +428,40 @@ body {
     object-fit: cover;
 }
 
+.blog-image-placeholder {
+    width: 100%;
+    height: 200px;
+    background: var(--gradient-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.blog-image-placeholder::before {
+    content: '🎵';
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.blog-image-placeholder::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="music-pattern" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="%23ffffff" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23music-pattern)"/></svg>');
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-5px); }
+}
+
 .blog-content {
     padding: 1.5rem;
 }
@@ -446,11 +480,74 @@ body {
     line-height: 1.6;
 }
 
-.blog-video {
+.youtube-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    background: rgba(255, 107, 53, 0.1);
+    border: 2px solid var(--primary-color);
+    border-radius: 12px;
+    text-decoration: none;
+    color: var(--text-light);
+    font-weight: 600;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+    margin-top: 1rem;
+}
+
+.youtube-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
     width: 100%;
-    height: 200px;
-    border: none;
-    border-radius: 8px;
+    height: 100%;
+    background: var(--gradient-primary);
+    transition: var(--transition);
+    z-index: -1;
+}
+
+.youtube-link:hover::before {
+    left: 0;
+}
+
+.youtube-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(255, 107, 53, 0.3);
+    border-color: var(--accent-color);
+}
+
+.youtube-icon {
+    font-size: 1.5rem;
+    transition: var(--transition);
+}
+
+.youtube-link:hover .youtube-icon {
+    transform: scale(1.2) rotate(5deg);
+}
+
+.youtube-text {
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.youtube-link:hover .youtube-text {
+    color: var(--text-light);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.youtube-arrow {
+    font-size: 1.2rem;
+    transition: var(--transition);
+    color: var(--primary-color);
+}
+
+.youtube-link:hover .youtube-arrow {
+    transform: translateX(5px);
+    color: var(--text-light);
 }
 
 /* Links Page */
