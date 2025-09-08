@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Christmas Album - Jussunique</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .christmas-hero {
+        background: linear-gradient(
+          135deg,
+          #cc0000 0%,
+          #1a4d2e 50%,
+          #000000 100%
+        );
+        position: relative;
+        overflow: hidden;
+      }
+
+      .christmas-section {
+        padding: 100px 0;
+        background: var(--bg-dark);
+        position: relative;
+      }
+
+      .spotify-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem;
+        background: rgba(26, 77, 46, 0.2);
+        border-radius: 20px;
+        border: 2px solid #1a4d2e;
+        box-shadow: var(--shadow);
+        backdrop-filter: blur(10px);
+      }
+
+      .christmas-title {
+        font-family: "Oswald", sans-serif;
+        font-size: 3.5rem;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 1rem;
+        background: var(--gradient-primary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+
+      .christmas-subtitle {
+        text-align: center;
+        font-size: 1.3rem;
+        margin-bottom: 3rem;
+        opacity: 0.9;
+        color: var(--text-light);
+      }
+
+      .album-description {
+        text-align: center;
+        font-size: 1.1rem;
+        line-height: 1.8;
+        margin-bottom: 3rem;
+        opacity: 0.9;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .spotify-embed {
+        border-radius: 15px;
+        box-shadow: 0 20px 40px rgba(26, 77, 46, 0.4);
+        overflow: hidden;
+      }
+
+      .christmas-message {
+        text-align: center;
+        padding: 3rem 0;
+        background: rgba(26, 77, 46, 0.15);
+        border-radius: 15px;
+        margin-top: 3rem;
+        border: 1px solid rgba(26, 77, 46, 0.5);
+      }
+
+      .christmas-message h3 {
+        font-family: "Oswald", sans-serif;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: var(--primary-color);
+      }
+
+      .christmas-message p {
+        font-size: 1.1rem;
+        font-style: italic;
+        opacity: 0.9;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <div class="logo">
+          <h1>JUSSUNIQUE</h1>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="links.html">Links</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="christmas.html" class="active">Christmas</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="christmas-hero links-hero">
+        <div class="container">
+          <h1 class="christmas-title">🎄 Christmas Vibes 🎄</h1>
+          <p class="christmas-subtitle">
+            Holiday Hip-Hop Album | Stream Now on Spotify
+          </p>
+        </div>
+      </section>
+
+      <section class="christmas-section">
+        <div class="container">
+          <div class="spotify-container">
+            <div class="album-description">
+              <p>
+                Experience the holiday season like never before with
+                Jussunique's Christmas album. Blending traditional holiday
+                spirit with modern hip-hop beats, this collection brings you
+                festive tracks that celebrate the season while keeping that
+                signature lyrical flow you love.
+              </p>
+            </div>
+
+            <div class="spotify-embed">
+              <iframe
+                data-testid="embed-iframe"
+                style="border-radius: 12px"
+                src="https://open.spotify.com/embed/album/2QxLhrJmHm7jvajHa0gLua?utm_source=generator"
+                width="100%"
+                height="352"
+                frameborder="0"
+                allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+              ></iframe>
+            </div>
+
+            <div class="christmas-message">
+              <h3>🎁 Season's Greetings 🎁</h3>
+              <p>
+                "Music has the power to bring people together, especially during
+                the holidays. This album is my gift to you and your family. May
+                these beats bring joy to your celebrations and warmth to your
+                hearts this Christmas season."
+              </p>
+              <p style="margin-top: 1rem; font-weight: 600">- Jussunique</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2024 Jussunique. All rights reserved.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">📱</a>
+          <a href="#" aria-label="YouTube">📺</a>
+          <a href="#" aria-label="Spotify">🎵</a>
+          <a href="#" aria-label="Apple Music">🍎</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
